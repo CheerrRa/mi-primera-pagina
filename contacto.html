@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <title> Contacto - John's Telecom </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1> <img src="imagenes/logo.png" alt="logo de John's Telecom"> </h1>
+
+                <nav>  
+
+                    <ul>
+    
+                        <li> <a href="index.html"> Home </a></li>
+                        <li> <a href="protocolos_enrrutamiento.html"> Protocolos de Enrrutamiento </a></li>
+                        <li> <a href="https://github.com/CheerrRa"> Github </a></li>
+                        <li> <a href="contacto.html"> Contacto </a></li>
+                            
+                    </ul>
+                </nav>
+
+            </div> 
+        </header>
+        
+        <main>
+
+            <form>
+
+                <label for="nombreApellido"> Nombres y Apellidos </label>
+                <input type="text" id="nombreApellido" class="input-patron">
+                
+                <label for="email"> Correo Electronico </label>
+                <input type="email" id="email" class="input-patron" required placeholder="email@dominio.com">
+    
+                <label for="telefono"> Telefono (+51) </label>
+                <input type="tel" id="telefono" class="input-patron" required placeholder="XXX XXX XXX">    
+                
+                <label for="mensaje"> Mensaje </label>
+                <textarea  id="mensaje" cols="70" rows="10" class="input-patron" required></textarea>
+
+                <fieldset>
+                    <legend> ¿Cómo le gustaria que lo contactemos? </legend>
+
+                    <label for="radio-email">  <input type="radio" name="contacto" value="contacto-email" id="radio-email"> Email </label>
+
+                    <label for="radio-telefono"> <input type="radio" name="contacto" value="contacto-telefono" id="radio-telefono"> Teléfono </label>
+
+                    <label for="radio-whatsapp"> <input type="radio" name="contacto" value="contacto-whatsapp" id="radio-whatsapp" checked> Whatsapp </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿ En que Horario prefiere ser atendido? </legend>
+                
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked> Le gustaria recibir las novedades reciente de John's Telecom </label>
+    
+                <input  class="enviar" type="submit" value="Enviar Formulario" >
+
+            </form>
+            
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <footer>
+            <img src="imagenes/logo-bg.png" alt="pie de pagina">
+            <p class="Copyright"> &copy Copyright 2023 John's Telecom. All rights reserved </p>
+        </footer>
+    </body>
+</html>
